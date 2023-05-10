@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MenuComponent } from './comps/menu/menu.component';
+import { MenuModule } from "primeng/menu"
 
 import { NxWelcomeComponent } from './nx-welcome.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [NxWelcomeComponent, RouterModule, MenuComponent, MenuModule],
   selector: 'ava-website-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
