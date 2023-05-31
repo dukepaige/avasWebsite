@@ -1,1 +1,8 @@
 <p>product-list works!</p>
+<div>
+    <!-- <h1>{{productList[0]["name"] | json}}</h1> -->
+    <div class="{{product.price}}"*ngFor="let product of productList">
+        {{product.id|json}}
+        {{product.name|json}}
+    </div>
+</div>
